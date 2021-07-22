@@ -15,7 +15,7 @@ document.querySelector(".busca").addEventListener('submit', async (event) => {
         showWarning('Carregando...');
 
         //let url = `http://api.openweathermap.org/data/2.5/weather?q=${encodeURI(imput)}&appid=d06cdb298fafc83c520d5ab677fc477e&units=metric&lang=pt_br`;
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${encodeURI(imput)}&appid=59b3ebf814df63076bc1705b9806a8db&units=metric&lang=pt_br`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(imput)}&appid=59b3ebf814df63076bc1705b9806a8db&units=metric&lang=pt_br`;
         // encodeURI == é usando para passar uma string para uma url
 
         let resuts = await fetch(url);
